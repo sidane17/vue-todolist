@@ -1,0 +1,24 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vue-ToDo-list</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <div id="app">
+        <input type="text" required placeholder="nome" v-model="compito" />
+        <button type="submit" @click="addLista"></button>
+
+        <div id="lista">
+          <h2>ToDo list</h2>
+          <ul id="contenitore_lista"></ul>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+    <script src="main.js"></script>
+  </body>
+</html>
