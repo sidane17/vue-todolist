@@ -4,7 +4,7 @@ createApp({
     data(){
         return{
             compito : '',
-            Todo:[]
+            Todo:["uno","due","tre"]
         }
     },
     methods:{
