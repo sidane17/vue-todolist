@@ -21,8 +21,8 @@
         <div id="lista">
           <h2>ToDo list</h2>
           <ul id="contenitore_lista">
-            <li v-for="i in Todo">
-              {{i}}<i class="fa-solid fa-x ms-2" @click="remove(i)"></i>
+            <li v-for="elemento, i in Todo">
+              {{elemento}}<i class="fa-solid fa-x ms-2" @click="remove(i)"></i>
             </li>
           </ul>
         </div>

@@ -15,7 +15,8 @@ createApp({
             }
         },
         remove(i){
-            delete this.Todo[i]
+             this.Todo.splice(i,1);
+            
         }
     }
 }).mount('#app');
