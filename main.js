@@ -3,7 +3,10 @@ const {createApp}= Vue;
 createApp({
     data(){
         return{
-            compito : '',
+            og:{
+                compito : '',
+                Boolean:true,
+            },
             Todo:[],
             show:false
         }
@@ -17,6 +20,13 @@ createApp({
         remove(i){
              this.Todo.splice(i,1);
             
+        },
+        change(value){
+            this.Boolean=!this.Boolean
+            console.log(this.Boolean)
+            return this.Boolean
+
         }
+       
     }
 }).mount('#app');

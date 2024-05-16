@@ -10,6 +10,7 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="stilke.css" />
   </head>
   <body>
     <header></header>
@@ -21,7 +22,11 @@
         <div id="lista">
           <h2>ToDo list</h2>
           <ul id="contenitore_lista">
-            <li v-for="elemento, i in Todo">
+            <li
+              v-for="elemento, i in Todo"
+              @click="change(Boolean)"
+              :class="[(change(Boolean))? 'green':'red']"
+            >
               {{elemento}}<i class="fa-solid fa-x ms-2" @click="remove(i)"></i>
             </li>
           </ul>
